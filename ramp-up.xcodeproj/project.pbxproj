@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DACBD2A81F2BC5410048D784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACBD2A71F2BC5410048D784 /* AppDelegate.swift */; };
 		DACBD2AA1F2BC5410048D784 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = DACBD2A91F2BC5410048D784 /* art.scnassets */; };
-		DACBD2AC1F2BC5410048D784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACBD2AB1F2BC5410048D784 /* ViewController.swift */; };
+		DACBD2AC1F2BC5410048D784 /* RampPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACBD2AB1F2BC5410048D784 /* RampPlacerVC.swift */; };
 		DACBD2AF1F2BC5410048D784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACBD2AD1F2BC5410048D784 /* Main.storyboard */; };
 		DACBD2B11F2BC5410048D784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACBD2B01F2BC5410048D784 /* Assets.xcassets */; };
 		DACBD2B41F2BC5410048D784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACBD2B21F2BC5410048D784 /* LaunchScreen.storyboard */; };
+		DACBD2BD1F2BCDF00048D784 /* RampPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACBD2BC1F2BCDF00048D784 /* RampPickerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DACBD2A41F2BC5410048D784 /* ramp-up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ramp-up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACBD2A71F2BC5410048D784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DACBD2A91F2BC5410048D784 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		DACBD2AB1F2BC5410048D784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DACBD2AB1F2BC5410048D784 /* RampPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPlacerVC.swift; sourceTree = "<group>"; };
 		DACBD2AE1F2BC5410048D784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DACBD2B01F2BC5410048D784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DACBD2B31F2BC5410048D784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DACBD2B51F2BC5410048D784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACBD2BC1F2BCDF00048D784 /* RampPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPickerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		DACBD2A61F2BC5410048D784 /* ramp-up */ = {
 			isa = PBXGroup;
 			children = (
+				DACBD2BB1F2BC67C0048D784 /* Controller */,
 				DACBD2A71F2BC5410048D784 /* AppDelegate.swift */,
 				DACBD2A91F2BC5410048D784 /* art.scnassets */,
-				DACBD2AB1F2BC5410048D784 /* ViewController.swift */,
 				DACBD2AD1F2BC5410048D784 /* Main.storyboard */,
 				DACBD2B01F2BC5410048D784 /* Assets.xcassets */,
 				DACBD2B21F2BC5410048D784 /* LaunchScreen.storyboard */,
 				DACBD2B51F2BC5410048D784 /* Info.plist */,
 			);
 			path = "ramp-up";
+			sourceTree = "<group>";
+		};
+		DACBD2BB1F2BC67C0048D784 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DACBD2AB1F2BC5410048D784 /* RampPlacerVC.swift */,
+				DACBD2BC1F2BCDF00048D784 /* RampPickerVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACBD2AC1F2BC5410048D784 /* ViewController.swift in Sources */,
+				DACBD2AC1F2BC5410048D784 /* RampPlacerVC.swift in Sources */,
+				DACBD2BD1F2BCDF00048D784 /* RampPickerVC.swift in Sources */,
 				DACBD2A81F2BC5410048D784 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
